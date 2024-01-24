@@ -1,7 +1,22 @@
-import { useState } from "react";
+import Header from "./components/Header";
+import Render from "./components/Render";
+import Parameters from "./components/Parameters";
 
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    // main div container
+    <div className="flex flex-col h-full w-full justify-center items-center">
+      {/* Header Component Container */}
+        <Header />
+      {/* Main page below header container */}
+      <div className="flex flex-row w-full justify-center items-center divide-x-2 divide-black">
+        {/* 3D renderer component */}
+        <Render />
+        {/* Parameter display component */}
+        <Parameters />
+      </div>
+    </div>
+  );
 }
 
 export default App;
