@@ -5,7 +5,7 @@ const Header = () => {
             <div className='flex flex-row justify-center items-center text-center'>
               <div className='flex flex-col justify-center items-center text-center'>
                 <p>Now</p>
-                <p>2 degrees *icons that I downloaded twice and Aryan deleted because he thinks he is too good for everyone*</p>
+                <p>2 degrees *icons*</p>
                 <p>Feels like 1.5 degrees</p>
               </div>
               <div className='flex flex-col justify-center items-center text-center'>
@@ -20,7 +20,7 @@ const Header = () => {
         <div className='flex flex-row justify-center items-center text-center'>
               <div className='flex flex-col justify-center items-center text-center'>
                 <p>Forecast</p>
-                <p>15 degrees *icons that I downloaded twice and Aryan deleted because he thinks he is too good for everyone*</p>
+                <p>15 degrees *icons*</p>
                 <p>Feels like 12 degrees</p>
               </div>
               <div className='flex flex-col justify-center items-center text-center'>
