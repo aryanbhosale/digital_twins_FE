@@ -14,7 +14,6 @@ function App() {
       <Header
         currentWeather={currentWeather}
         forecastWeather={forecastWeather}
-        selectedWeather={selectedWeather}
         setSelectedWeather={setSelectedWeather}
       />
       {/* Main page below header container */}
