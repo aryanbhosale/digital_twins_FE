@@ -1,12 +1,12 @@
-import Header from "./components/Header";
-import Render from "./components/Render";
-import Parameters from "./components/Parameters";
-import { useState } from "react";
+import Header from './components/Header'
+import Render from './components/Render'
+import Parameters from './components/Parameters'
+import { useState } from 'react'
 
 function App() {
-  const [currentWeather, setCurrentWeather] = useState("Snow");
-  const [forecastWeather, setForecastWeather] = useState("Rain");
-  const [selectedWeather, setSelectedWeather] = useState(currentWeather);
+  const [currentWeather, setCurrentWeather] = useState('Snow')
+  const [forecastWeather, setForecastWeather] = useState('Rain')
+  const [selectedWeather, setSelectedWeather] = useState(currentWeather)
   return (
     // main div container
     <div className="flex flex-col h-full w-full justify-center items-center bg-[#030712]">
@@ -21,10 +21,20 @@ function App() {
         {/* 3D renderer component */}
         <Render selectedWeather={selectedWeather} />
         {/* Parameter display component */}
-        <Parameters />
+
+        <Parameters
+          MaxTemp={5}
+          MaxWind={15}
+          MinTemp={8}
+          AvgTemp={10}
+          AvgVisibility={20}
+          AvgHum={30}
+          TotalPer={30}
+          TotalSnow={30}
+        />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
