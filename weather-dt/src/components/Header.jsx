@@ -11,10 +11,6 @@ const Header = ({ currentWeather, forecastWeather, setSelectedWeather }) => {
           <div>
             <p >2 degrees </p>
             <p>Feels like 1.5 degrees</p>
-        <div className="flex flex-row justify-around w-full h-full">
-          <div className="flex flex-col justify-center items-center text-center">
-            <p>Now</p>
-            <p>2 degrees *icons*</p>
           </div>
           </div>
           <div className="flex flex-col justify-start">
@@ -23,13 +19,17 @@ const Header = ({ currentWeather, forecastWeather, setSelectedWeather }) => {
         </div>
       </div>
       <div className="flex justify-center items-center text-center w-full h-full cursor-pointer hover:bg-gray-800 active:bg-slate-950 transition-all" onClick={() => setSelectedWeather(forecastWeather)}>
-        <div className="flex flex-row justify-around w-full h-full">
+        <div className="flex flex-row justify-center items-center text-center">
           <div className="flex flex-col justify-center items-center text-center">
             <p>Forecast</p>
             <p>15 degrees *icons*</p>
+            <p>Feels like 12 degrees</p>
           </div>
           <div className="flex flex-col justify-center items-center text-center">
             <p>Rain</p>
+            <p>Precipitation: 70%</p>
+            <p>Wind: 20km/h, medium</p>
+            <p>Humidity: 85%</p>
           </div>
         </div>
       </div>
